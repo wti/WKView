@@ -116,7 +116,10 @@ final public class WebViewWrapper : UIViewRepresentable {
 
 @available(iOS 13.0, *)
 extension WebViewWrapper.Coordinator: WKNavigationDelegate {
-    
+
+  private func print(_ s: String) {
+    // print(s)
+  }
     public func handleAllowedHosts(
         _ webView: WKWebView,
         decidePolicyFor navigationAction: WKNavigationAction,

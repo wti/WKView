@@ -5,6 +5,7 @@
 //  Created by Alex Nagy on 09.12.2020.
 //
 
+#if !os(macOS)
 import SwiftUI
 import UIKit
 import WebKit
@@ -138,3 +139,4 @@ public struct WebView: View {
         
     }
 }
+#endif
